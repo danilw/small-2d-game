@@ -20,7 +20,7 @@ em++ -DNANOVG_GLES3_IMPLEMENTATION -DGLFW_INCLUDE_ES3 -DGLFW_INCLUDE_GLEXT -DNAN
 ```
 
 ### Video
-[![2dg](scr)](yt)
+[![2dg](ttps://danilw.github.io/small-2d-game/yt.png))](https://youtu.be/zauOYUeD5Hs)
 
 ### Screenshot
 ![2dg](https://danilw.github.io/small-2d-game/scr.png)
