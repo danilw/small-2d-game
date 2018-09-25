@@ -1,7 +1,7 @@
 # 2d Game
 **what is it** one more try of game coding with GLSL and box2d, not using any game engines
 
-**play** [live]()
+**play** [live](https://danilw.github.io/small-2d-game/2dgamii.html)
 
 original GLSL source in *glsl* folder (soon)
 
