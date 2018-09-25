@@ -5,7 +5,7 @@
 
 original GLSL source in *glsl* folder (soon)
 
-**binary builds** added *binary* builds for [Linux(gcc)](), to launch on Linux use *LD_LIBRARY_PATH=. ./2dgame* , and [Windows(VS2017)]()
+**binary builds** added *binary* builds for [Linux_64bit(gcc)](https://danilw.github.io/small-2d-game/linux_64.zip), to launch on Linux use *LD_LIBRARY_PATH=. ./2dgamii* , and [Windows(VS2017)]()
 
 ### Building
 
