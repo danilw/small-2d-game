@@ -19,8 +19,6 @@ highp vec3 ground1;
 highp vec3 ground2;
 highp vec3 ground3;
 highp vec3 colx;
-// License Creative Commons Attribution-NonCommercial-ShareAlike
-// original source github.com/danilw
 void main ()
 {
   green = vec3(0.4980392, 0.7450981, 0.1254902);
@@ -76,8 +74,13 @@ void main ()
   if (((u_rtime <= 23.0) && (shape_tile_l_2 != 10))) {
     fragColor_1 = vec4(0.0, 0.0, 0.0, 0.0);
   };
-  switch(shape_tile_l_2){
-  case 0: {
+  bool tmpvar_10;
+  tmpvar_10 = bool(0);
+  bool tmpvar_11;
+  tmpvar_11 = bool(0);
+  if(0 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     mat2 tmpvar_12;
     float tmpvar_13;
     tmpvar_13 = -(shape_rotate_an);
@@ -158,9 +161,11 @@ void main ()
     tmpvar_25.xyz = (tmpvar_22 * tmpvar_23);
     tmpvar_25.w = tmpvar_23;
     fragColor_1 = tmpvar_25;
-  };break;
-
- case 1: {
+    tmpvar_11 = bool(1);
+  };
+  if(1 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec2 p_26;
     p_26.x = uv_4.x;
     highp float d_27;
@@ -262,8 +267,11 @@ void main ()
       (tmpvar_47 * (3.0 - (2.0 * tmpvar_47)))
     )));
     fragColor_1 = (tmpvar_48 * tmpvar_48);
-  };break;
-  case 2:{
+    tmpvar_11 = bool(1);
+  };
+  if(2 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp float d_49;
     highp vec4 fragColor_50;
     highp vec2 p_51;
@@ -487,8 +495,11 @@ void main ()
       (3.0 - (2.0 * tmpvar_98))
     )));
     fragColor_1 = (fragColor_50 * fragColor_50);
-  };break;
-  case 3: {
+    tmpvar_11 = bool(1);
+  };
+  if(3 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec4 fragColor_99;
     highp float d_100;
     highp vec2 p_101;
@@ -920,8 +931,11 @@ void main ()
       (3.0 - (2.0 * tmpvar_194))
     )));
     fragColor_1 = (fragColor_99 * fragColor_99);
-  };break;
-  case 4:{
+    tmpvar_11 = bool(1);
+  };
+  if(4 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec2 tmpvar_195;
     tmpvar_195.x = -(uv_4.x);
     tmpvar_195.y = uv_4.y;
@@ -1356,8 +1370,11 @@ void main ()
       (3.0 - (2.0 * tmpvar_291))
     )));
     fragColor_1 = (fragColor_196 * fragColor_196);
-  };break;
-  case 5:{
+    tmpvar_11 = bool(1);
+  };
+  if(5 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec4 fragColor_292;
     highp float tmpvar_293;
     highp vec2 p_294;
@@ -1548,8 +1565,11 @@ void main ()
       (3.0 - (2.0 * tmpvar_335))
     )));
     fragColor_1 = (fragColor_292 * fragColor_292);
-  };break;
-  case 6:{
+    tmpvar_11 = bool(1);
+  };
+  if(6 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec2 tmpvar_336;
     tmpvar_336.x = -(uv_4.x);
     tmpvar_336.y = uv_4.y;
@@ -1743,8 +1763,11 @@ void main ()
       (3.0 - (2.0 * tmpvar_380))
     )));
     fragColor_1 = (fragColor_337 * fragColor_337);
-  };break;
-  case 7:{
+    tmpvar_11 = bool(1);
+  };
+  if(7 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp float d_381;
     highp vec2 p_382;
     p_382.x = uv_4.x;
@@ -2071,8 +2094,11 @@ void main ()
       (1.0 - tmpvar_428)
     )));
     fragColor_1 = (tmpvar_451 * tmpvar_451);
-  };break;
-  case 8:{
+    tmpvar_11 = bool(1);
+  };
+  if(8 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec2 tmpvar_452;
     tmpvar_452.x = -(uv_4.x);
     tmpvar_452.y = uv_4.y;
@@ -2402,8 +2428,11 @@ void main ()
       (1.0 - tmpvar_500)
     )));
     fragColor_1 = (tmpvar_523 * tmpvar_523);
-  };break;
-  case 9:{
+    tmpvar_11 = bool(1);
+  };
+  if(9 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     mat2 tmpvar_524;
     float tmpvar_525;
     tmpvar_525 = -(shape_rotate_an);
@@ -2515,8 +2544,11 @@ void main ()
       )));
     };
     fragColor_1 = mix (((tmpvar_537.zxxw * 0.6) * (tmpvar_538 + tmpvar_540)), tmpvar_537, tmpvar_542);
-  };break;
-  case 10:{
+    tmpvar_11 = bool(1);
+  };
+  if(10 == shape_tile_l_2) tmpvar_10 = bool(1);
+  if(tmpvar_11) tmpvar_10 = bool(0);
+  if (tmpvar_10) {
     highp vec2 uv_547;
     uv_547 = uv_4;
     highp vec3 col_548;
@@ -3213,11 +3245,11 @@ void main ()
       tmpvar_673 = clamp (((
         abs(tmpvar_560)
        - 0.01) / 0.002), 0.0, 1.0);
-      col_548 = clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), max (col_548, (vec3(0.8392157, 0.8588235, 0.827451) * 
+      col_548 = clamp (max (col_548, (vec3(0.8392157, 0.8588235, 0.827451) * 
         (1.0 - (tmpvar_673 * (tmpvar_673 * (3.0 - 
           (2.0 * tmpvar_673)
         ))))
-      )));
+      )), vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0));
     } else {
       highp vec2 uv_674;
       uv_674 = (uv_4 * 0.85);
@@ -3419,13 +3451,13 @@ void main ()
       highp vec3 tmpvar_725;
       tmpvar_725 = (colx / n_675);
       highp vec3 tmpvar_726;
-      tmpvar_726 = (clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), abs(
-        pow ((min (vec3(1.0, 1.0, 1.0), (tmpvar_725 * tmpvar_725)) * (1.0 - (1.2 * tmpvar_723))), vec3(0.24545, 0.24545, 0.24545))
-      )) * ppower);
+      tmpvar_726 = (clamp (abs(
+        pow ((min (vec3(1.0, 1.0, 1.0), (tmpvar_725 * tmpvar_725)) * (1.0 - (0.9 * tmpvar_723))), vec3(0.24545, 0.24545, 0.24545))
+      ), vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0)) * ppower);
       highp vec3 tmpvar_727;
-      tmpvar_727 = clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), (vec3(0.01678431, 0.01717647, 0.01654902) / abs(
+      tmpvar_727 = clamp ((vec3(0.01678431, 0.01717647, 0.01654902) / abs(
         ((tmpvar_565 + ((tmpvar_567 * tmpvar_726.x) / 4.0)) - 0.5)
-      )));
+      )), vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0));
       mat2 tmpvar_728;
       tmpvar_728[uint(0)].x = cos(rot2_549);
       tmpvar_728[uint(0)].y = -(sin(rot2_549));
@@ -3581,19 +3613,19 @@ void main ()
       )));
       d_742 = tmpvar_756;
       highp vec3 tmpvar_757;
-      tmpvar_757 = max (max (clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), 
+      tmpvar_757 = max (max (clamp (
         max (col_548, (((tmpvar_756 * vec3(0.9960784, 0.4039216, 0.3882353)) * (0.03 + 
           (0.03 * ppower)
         )) / abs((
           (tmpvar_566 + (tmpvar_726.x / 3.5))
          - 0.5))))
-      ), clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), 
+      , vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0)), clamp (
         ((((vec3(0.2862745, 0.06666667, 0.6117647) * 
           float((((0.8 * ajcd) - 0.4) >= uv_547.y))
         ) + (vec3(0.09035433, 0.2228155, 0.2318182) * 
           float((((0.8 * ajcd2) - 0.4) >= uv_547.y))
         )) * 0.06) / abs((tmpvar_567 - 0.5)))
-      )), ((vec3(0.2862745, 0.06666667, 0.6117647) * 
+      , vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0))), ((vec3(0.2862745, 0.06666667, 0.6117647) * 
         (0.08 + (tmpvar_726 / 5.0))
       ) / abs(
         ((tmpvar_568 - ((tmpvar_568 * tmpvar_726) / 10.0)) - 0.5)
@@ -3658,7 +3690,7 @@ void main ()
       tmpvar_767 = clamp (((
         sqrt(dot (uv_547, uv_547))
        - 0.8) / -0.3), 0.0, 1.0);
-      col_548 = (clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), max (tmpvar_757, 
+      col_548 = (clamp (max (tmpvar_757, 
         (((1.0 - tmpvar_758) * ((
           (float(mod ((abs((tmpvar_765.x - 20.5)) * 6.0), 2.0)))
          * 
@@ -3670,7 +3702,7 @@ void main ()
         ))) * (tmpvar_726 + (vec3(0.02517647, 0.02576471, 0.02482353) / abs(
           ((tmpvar_569 - (tmpvar_726.x / 5.0)) - 0.5)
         ))))
-      )) * (tmpvar_767 * (tmpvar_767 * 
+      ), vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0)) * (tmpvar_767 * (tmpvar_767 * 
         (3.0 - (2.0 * tmpvar_767))
       )));
     };
@@ -3678,7 +3710,8 @@ void main ()
     tmpvar_768.xyz = col_548;
     tmpvar_768.w = max (max (col_548.x, col_548.y), col_548.z);
     fragColor_1 = (tmpvar_768 * tmpvar_768);
-  };break;}
+    tmpvar_11 = bool(1);
+  };
   if (((u_rtime <= 25.0) && (shape_tile_l_2 != 10))) {
     float tmpvar_769;
     tmpvar_769 = clamp (((u_rtime - 23.0) / 2.0), 0.0, 1.0);

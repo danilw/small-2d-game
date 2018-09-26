@@ -13,8 +13,6 @@ highp int SAMPLES;
 float DENSITY;
 float WEIGHT;
 float ilval;
-// License Creative Commons Attribution-NonCommercial-ShareAlike
-// original source github.com/danilw
 void main ()
 {
   SAMPLES = 8;
@@ -950,7 +948,7 @@ void main ()
     )));
     col_80 = (col_80 + (1.0 - (4.2 * tmpvar_219)));
     highp vec3 tmpvar_220;
-    tmpvar_220 = clamp (vec3(1.0, 1.0, 1.0), vec3(0.0, 0.0, 0.0), col_80);
+    tmpvar_220 = clamp (col_80, vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0));
     col_80 = tmpvar_220;
     highp vec4 tmpvar_221;
     tmpvar_221.xyz = tmpvar_220;
@@ -959,7 +957,7 @@ void main ()
       (tmpvar_79 * (3.0 - (2.0 * tmpvar_79)))
     )) * tmpvar_221);
   };
-  fragColor_1 = (fragColor_1 + tmpvar_78);
+  fragColor_1 = (fragColor_1 + clamp (tmpvar_78, vec4(0.0, 0.0, 0.0, 0.0), vec4(1.0, 1.0, 1.0, 1.0)));
   if ((u_time <= 15.0)) {
     highp vec2 p_222;
     float tmpvar_223;
