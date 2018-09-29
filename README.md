@@ -3,7 +3,7 @@
 
 **play** [live](https://danilw.github.io/small-2d-game/2dgamii.html)
 
-original GLSL source in *glsl* folder (soon)
+original GLSL source in *glsl* folder
 
 **binary builds** added *binary* builds for [Linux_64bit(gcc)](https://danilw.github.io/small-2d-game/linux_64.zip), to launch on Linux use *LD_LIBRARY_PATH=. ./2dgamii* , and [Windows_64bit(VS2017)](https://danilw.github.io/small-2d-game/windows_64.zip)
 
